@@ -1,0 +1,31 @@
+{
+  "name": "webicons",
+  "version": "1.0.0",
+  "description": "project to create favicons sets for the HomeDing library",
+  "main": "makeicon.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "makeall" : "for %F in (i\\*.svg) do (node makeicon.js -n %~nF -s)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HomeDing/WebIcons.git"
+  },
+  "keywords": [
+    "HomeDing",
+    "icons",
+    "favicons"
+  ],
+  "author": "Matthis Hertel",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/HomeDing/WebIcons/issues"
+  },
+  "homepage": "https://github.com/HomeDing/WebIcons#readme",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "shelljs": "^0.8.4",
+    "svg-to-png": "^4.0.0",
+    "yargs": "^15.3.1"
+  }
+}
